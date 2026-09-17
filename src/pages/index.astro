@@ -1,11 +1,127 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import michaelPortrait from '../assets/lines-2.jpg';
 ---
 
 <Layout>
-	<Welcome />
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Natural Lines home">Natural Lines</a>
+      <nav aria-label="Main navigation">
+        <a href="#approach">Approach</a>
+        <a href="#michael">Why Michael</a>
+        <a href="#contact">Talk to Michael</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="role">Michael Lines / Fractional CEO, Operating Partner, Advisor</p>
+          <h1 id="hero-title">I help founder-led brands make the transition to a scalable company.</h1>
+          <p class="hero-intro">
+            Michael works with founder-led food, beverage and wellness brands as they move into their next stage of growth.
+          </p>
+          <a class="text-link" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <figure class="hero-image">
+          <img src={michaelPortrait.src} alt="Michael Lines seated and looking toward the camera" />
+          <figcaption>Michael Lines<br />Toronto / North America</figcaption>
+        </figure>
+
+      </section>
+
+      <section id="approach" class="approach" aria-labelledby="approach-title">
+        <div class="approach-lead">
+          <p class="section-kicker">The moment I help with</p>
+          <h2 id="approach-title">When the business has outgrown the way it used to work.</h2>
+        </div>
+        <div class="approach-body">
+          <p class="approach-statement">
+            Growth slows. Distribution plateaus. Margins tighten. The next channel, customer, hire or raise becomes more consequential, with less room to get it wrong.
+          </p>
+          <p class="approach-note">This is where experience becomes useful.</p>
+        </div>
+      </section>
+
+      <section id="michael" class="operator" aria-labelledby="operator-title">
+        <div class="operator-heading">
+          <p class="section-kicker">Why Michael</p>
+          <h2 id="operator-title">I know this stretch because I’ve lived it from every seat.</h2>
+        </div>
+        <div class="operator-detail">
+          <p>
+            When I was in the founder and CEO seat, the people I valued most were the ones who had been there before. They listened first, challenged my thinking and helped me see around corners.
+          </p>
+          <ul class="proof-list">
+            <li><strong>Founder</strong><span>Built and led from inside the business.</span></li>
+            <li><strong>CEO</strong><span>Carried the decisions, pressure and tradeoffs of growth.</span></li>
+            <li><strong>Operator</strong><span>Knows what the organization can actually deliver.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="work" class="work" aria-labelledby="work-title">
+        <div class="work-heading">
+          <p class="section-kicker">How I help</p>
+          <h2 id="work-title">Support that fits the problem in front of you.</h2>
+          <p>Four modular ways to work together, from a focused sprint to embedded leadership. Each can stand alone or stack together as the business evolves.</p>
+          <p class="audience-note"><strong>Who I work with:</strong> founders, CEOs and executive teams of better-for-you food, beverage and wellness brands, as well as private equity, family offices and investors who want an operator-advisor they can trust.</p>
+        </div>
+        <div class="engagement-list">
+          <article class="engagement-row">
+            <div><span class="row-number">01</span><h3>Growth &amp; Alignment Sprint</h3></div>
+            <p><strong>“We need clarity on where growth comes from next.”</strong><br />A defensible reason to win, a channel-by-channel growth and margin model, and a measured capital plan.</p>
+          </article>
+          <article class="engagement-row">
+            <div><span class="row-number">02</span><h3>Culture &amp; Strategy, Connected</h3></div>
+            <p><strong>“The organization isn’t consistently delivering.”</strong><br />Connect strategy to the behaviors, decisions, operating rhythms and accountability required to deliver it.</p>
+          </article>
+          <article class="engagement-row">
+            <div><span class="row-number">03</span><h3>Fractional Operating Partner</h3></div>
+            <p><strong>“We need someone alongside us to make it happen.”</strong><br />Embedded leadership that commercializes the plan, builds the operating rhythm and owns agreed outcomes with your team.</p>
+          </article>
+          <article class="engagement-row">
+            <div><span class="row-number">04</span><h3>Founder &amp; CEO Coaching</h3></div>
+            <p><strong>“I need a trusted partner who has sat in the seat.”</strong><br />A confidential thought partner who listens first, challenges when needed and strengthens alignment across the leadership team.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="method" class="method" aria-labelledby="method-title">
+        <div class="method-intro">
+          <p class="section-kicker">How the work begins</p>
+          <h2 id="method-title">I listen before I prescribe.</h2>
+          <p>
+            The Growth Alignment System starts by getting close to the business: leadership conversations, employee conversations, data, existing strategy, customers, consumers and the operation itself.
+          </p>
+        </div>
+        <div class="method-steps" aria-label="Growth Alignment System">
+          <div class="method-step"><span>Immerse</span><p>Understand what is working, what is getting in the way and where confidence should come from.</p></div>
+          <div class="method-step"><span>Align</span><p>Get clear on the compelling reason to win, then connect mission, culture and strategy.</p></div>
+          <div class="method-step"><span>Plan</span><p>Build the growth, go-to-market, organizational and capital plan.</p></div>
+          <div class="method-step"><span>Activate</span><p>Turn the plan into owners, milestones, decisions and a cadence that keeps momentum.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="footer-copy">
+        <p class="section-kicker">Natural Lines Inc.</p>
+        <h2>If this sounds like where you are, let’s talk.</h2>
+        <p>Michael Lines works directly with founders and leadership teams navigating the shift from founder-led growth to a scalable company.</p>
+      </div>
+      <div class="footer-contact">
+        <span>Michael Lines</span>
+        <span>Toronto / North America</span>
+        <span>[email] / [LinkedIn]</span>
+      </div>
+      <div class="footer-bottom">
+        <span>Natural Lines Inc.</span>
+        <span>Fractional CEO / Operating Partner / Advisor</span>
+        <span>© {new Date().getFullYear()}</span>
+      </div>
+    </footer>
+  </div>
 </Layout>
